@@ -16,12 +16,10 @@ public class User {
   private String paper = "ROLE_USER";
   public User() {
   }
-  public User(String id, String name, String email, String passwd, String paper) {
-    this.id = id;
+  public User(String name, String email, String passwd) {
     this.name = name;
     this.email = email;
     this.passwd = passwd;
-    this.paper = paper;
   }
   public String getId() {
     return id;
