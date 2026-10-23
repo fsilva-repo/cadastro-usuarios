@@ -23,7 +23,7 @@ public class UserService {
   public UserDTO register(RegisterDTO data) {
     String email = data.email().trim().toLowerCase();
 
-    if (repository.existexistsByEmail(email)) {
+    if (repository.existsByEmail(email)) {
       throw new ResponseStatusException(HttpStatus.CONFLICT, "email já cadastrado");
     }
 

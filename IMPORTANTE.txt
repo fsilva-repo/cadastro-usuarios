@@ -1,0 +1,12 @@
+crie uma variavel temporaria com a senha do usuario root
+no mongodb para o momento em que a container for subir na primeira vez.
+
+export MONGO_ROOT_PASSWORD=passwd123
+
+use a mesma variavel antes de executar a aplicacao
+
+export MONGO_ROOT_PASSWORD=passwd123
+
+agora pode iniciar o Spring Boot (Exemplo com Maven)
+
+mvn spring-boot:run

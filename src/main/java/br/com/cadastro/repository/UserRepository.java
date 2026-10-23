@@ -9,5 +9,5 @@ import br.com.cadastro.model.User;
 public interface UserRepository extends MongoRepository<User, String> {
 
   Optional<User> findByEmail(String email);
-  boolean existexistsByEmail(String email);
+  boolean existsByEmail(String email);
 }
